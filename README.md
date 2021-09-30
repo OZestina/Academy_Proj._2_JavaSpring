@@ -7,7 +7,7 @@ Project 다행(Dahaeng): Java (Spring), JSP 및 Oracle DB를 이용한 웹사이
 
 진행인원: 5명
 사용도구: Eclipse, Spring, DBeaver, Apache tomcat 8.5  
-사용기술: Java, JSP, JS, jQuery, JSON, HTML, CSS, Oracle DB, ObjectAid, vision api, Google Chart api, Kakao map api, iamport api (결제)
+사용기술: Java, JSP, JS, jQuery, JSON, HTML, CSS, Oracle DB, ObjectAid, Kakao vision api, iamport api (결제)
 
 
 **담당 업무**
@@ -23,14 +23,15 @@ Project 다행(Dahaeng): Java (Spring), JSP 및 Oracle DB를 이용한 웹사이
 1. 구매내역 기반 추천(로그인 여행자) -> 기존 구매내역 기반 액티비티 제안
 2. 다행 추천 -> 다행에서만 제공하는 특별 액티비티 및 다행의 베스트셀러 액티비티 제안 (평점순, 판매순)
 3. 인구데이터기반 -> 다행의 기존 구매 내역을 기반으로 연령별 / 성별 인기있는 액티비티 추천
-4. 사진 취향 분석 -> vision api를 이용해 선택한 사진의 취향을 분석해 적절한 액티비티 제안
+4. 사진 취향 분석 -> Kakao vision api를 이용해 선택한 사진의 태그를 분석해 관련있는 액티비티 테마 제안
 
 **[위시리스트(찜하기)]**  
 *원하는 액티비티를 상세페이지에서 선택 및 별도의 페이지에서 한 번에 관리하는 찜하기 기능 구현
-1. 상세페이지 내 찜하기 버튼 생성 -> 해당 버튼 클릭 시 위시리스트 DB 추가 처리 및 버튼 클릭 표시
+1. 상세페이지 내 찜하기 버튼 생성 -> 로그인한 여행자만 이용 가능
+                                -> 해당 버튼 클릭 시 위시리스트 DB 추가 처리 및 버튼 클릭 표시
                                 -> 클릭된 찜하기 버튼 다시 클릭 시 위시리스트 DB 삭제 처리 및 버튼 클릭 해제
 2. 위시리스트 페이지 -> 찜하기로 선택된 액티비티 리스트로 노출
-                    -> 찜하기 취소 시 위시리스트 DB 삭제 처리 및 버튼 클릭 해제
+                    -> 찜하기 취소 시 위시리스트 DB 삭제 처리 및 리스트에서 제거
 
 **[결제/결제내역]**  
 *여행자 액티비티 구매를 위해 iamport의 온라인 결제 API 연결로 결제 진행  
