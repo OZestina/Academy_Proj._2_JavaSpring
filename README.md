@@ -1,4 +1,4 @@
-# Academy_project_2  
+# Academy_project_2_Java Spring mvc2  
 다행_online P2P travel activity platform using Java (Spring - mvc2), JSP, Oracle DB  
 
 Project 다행(Dahaeng): Java (Spring), JSP 및 Oracle DB를 이용한 웹사이트 구현  
